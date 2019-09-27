@@ -32,22 +32,6 @@ social: true
 
 <!-- 🔗 Outside Links: -->
 
-<!-- 
-<div style='font-size:2em;margin-left:20px;margin-top:120px;'>
-	<a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" 
-		target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-	<a href="https://orcid.org/{{ site.orcid_id }}" 
-		target="_blank" title="ORCID"><i class="ai ai-orcid"></i></a>
-	<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" 
-		target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="https://twitter.com/{{ site.twitter_username }}" 
-    	target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-    <a href="https://instagram.com/{{ site.instagram_username }}/" 
-    	target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://dblp.uni-trier.de/pers/hd/b/{{ site.dblp_username }}" 
-    	target="_blank" title="Instagram"><i class="ai ai-dblp"></i></a>
-</div>
- -->
 
 
 
