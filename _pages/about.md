@@ -16,6 +16,8 @@ news: false
 social: false
 ---
 
+test1
+
 <!-- **🚧  Updated site coming October 2019.** 🚧 -->
 
 <!-- Chris Bryan is an [assistant professor](https://isearch.asu.edu/node/311265/) of Computer Science at [Arizona State University](https://www.asu.edu/) in the [School of Computing, Informatics, & Decision Systems](https://cidse.engineering.asu.edu/) (CIDSE). His research spans the areas of data visualization, human-computer interaction, and data science. At ASU, he runs the Sonoran Visualization Laboratory (SVL @ ASU). He received his Ph.D. in 2018 from the University of California, Davis, as a part of the [VIDI lab](https://vidi.cs.ucdavis.edu). -->
