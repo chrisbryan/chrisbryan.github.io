@@ -220,7 +220,7 @@ description: #Publications by categories in reversed chronological order. Genera
 		<a href="https://doi.org/10.1109/VAST.2015.7347626" target="_blank">DOI</a> |
 		<a target='_blank' href="{{ 'integrating_vast2015.pdf' | prepend: '/assets/paper/' | prepend: site.baseurl | prepend: site.url }}">Paper</a> |
 		<a target='_blank' href="{{ 'integrating_vast2015_appendix.pdf' | prepend: '/assets/paper/' | prepend: site.baseurl | prepend: site.url }}">Appendix</a> |
-		<a target='_blank' href="{{ 'integrating_vast2015.mp4" target="_blank">Video</a>
+		<a target='_blank' href="{{ 'integrating_vast2015.mp4' | prepend: '/assets/video/' | prepend: site.baseurl | prepend: site.url }}">Video</a> |
 		
 	</div>
 </div>
