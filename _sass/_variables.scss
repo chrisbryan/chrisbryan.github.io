@@ -51,6 +51,7 @@ $dark-green:        #009f06 !default;
 $light-green:       #ddffdd !default;
 $lime_green:        #B7D12A !default;
 $purple:            #B509AC !default;
+$maroon:			#800000 !default;
 $pink:              #f92080 !default;
 $light-pink:        #ffdddd !default;
 $yellow:            #efcc00 !default;
@@ -70,7 +71,7 @@ $darken-2:          rgba(#000,.125) !default;
 $darken-3:          rgba(#000,.25) !default;
 $darken-4:          rgba(#000,.5) !default;
 
-$theme-color:       $purple;
+$theme-color:       $maroon;
 $code-color:        $dark-gray;
 $text-color:        $mid-gray;
 $background-color:  white;

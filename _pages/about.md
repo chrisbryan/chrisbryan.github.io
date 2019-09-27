@@ -13,7 +13,7 @@ profile:
 #    <p>Your City, State 12345</p>
 
 news: false
-social: false
+social: true
 ---
 
 
@@ -32,6 +32,7 @@ social: false
 
 <!-- 🔗 Outside Links: -->
 
+<!-- 
 <div style='font-size:2em;margin-left:20px;margin-top:120px;'>
 	<a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" 
 		target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
@@ -46,6 +47,7 @@ social: false
     <a href="https://dblp.uni-trier.de/pers/hd/b/{{ site.dblp_username }}" 
     	target="_blank" title="Instagram"><i class="ai ai-dblp"></i></a>
 </div>
+ -->
 
 
 

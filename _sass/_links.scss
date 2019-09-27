@@ -8,7 +8,9 @@ a {
     }
 }
 
-article a, .news a {
+
+
+article a, .news a, .post-header a {
     color: $theme-color;
     font-weight: 100;
 
