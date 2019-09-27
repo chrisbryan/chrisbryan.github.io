@@ -5,7 +5,9 @@
     {% if page.layout != "about" %}
     <span class="site-title">
         {% assign name = site.name | split: ' ' %}
+        <a class='site-title' href="{{ site.baseurl | prepend: site.url }}/">
         <strong>{{ name | first }}</strong> {{ name | last }}
+        </a>
     </span>
     {% endif %}
 
@@ -23,17 +25,25 @@
 
       <div class="trigger">
         <!-- About -->
-        <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">about</a>
+        
+<!--         <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">home</a> -->
+
+        <a class="page-link" href="{{ '/bio/' | prepend: site.baseurl | prepend: site.url }}">about</a>
+        <a class="page-link" href="{{ '/publications/' | prepend: site.baseurl | prepend: site.url }}">publications</a>
+<!--         <a class="page-link" href="{{ '/bio/' | prepend: site.baseurl | prepend: site.url }}">research</a> -->
+        <a class="page-link" href="{{ '/teaching/' | prepend: site.baseurl | prepend: site.url }}">teaching & service</a>
 
         <!-- Blog -->
-        <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a>
+<!--         <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a> -->
 
         <!-- Pages -->
+<!-- 
         {% for page in site.pages %}
           {% if page.title and page.url != "/" %}
             <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
+ -->
 
         <!-- CV link -->
         <!-- <a class="page-link" href="{{ '/assets/pdf/CV.pdf' | prepend: site.baseurl | prepend: site.url }}">vitae</a> -->

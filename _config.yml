@@ -2,13 +2,14 @@
 # Site settings
 # -----------------------------------------------------------------------------
 name: Chris Bryan
-email: you@example.com
+email: cbryan16@asu.edu
 description: > # this means to ignore newlines until "url:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+footer_text:  
+#>
+#  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+#  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+#  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url:  # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
@@ -18,22 +19,24 @@ last_updated: # leave blank if you don't want to display last updated
 # Social integration
 # -----------------------------------------------------------------------------
 github_username: chrisbryan # your GitHub user name
-twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
-orcid_id: # your ORCID ID
+twitter_username: chrisBryanASU # your Twitter handle
+linkedin_username: chris-bryan-990ba13b # your LinkedIn user name
+scholar_userid: Y73FwSkAAAAJ # your Google Scholar ID
+orcid_id: 0000-0003-2430-815X # your ORCID ID
+instagram_username: chrisbryanASU
+dblp_username: Bryan:Chris
 medium_username: # your Medium username
 quora_username: # your Quora username
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: #>
+#  You can even add a little note about which of these is the best way to reach you.
 
-google_analytics: UA-XXXXXXXXX # out your google-analytics code
+google_analytics: UA-135303653-1 # out your google-analytics code
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: al-folioooo
+blog_name: al-folio
 blog_description: a simple whitespace theme for academics
 
 # Pagination
@@ -91,13 +94,14 @@ plugins:
 # Jekyll-Scholar
 scholar:
 
-  last_name: Einstein
+  last_name: Bryan
 
   style: apa
   locale: en
 
   sort_by: year
   order: descending
+  group_by: type
 
   source: /_bibliography/
   bibliography: papers.bib
