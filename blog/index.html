@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
+<<<<<<< HEAD
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1" />
@@ -93,37 +95,25 @@
         <div class="header-bar">
   <h1>al-folioooo</h1>
   <h2>a simple whitespace theme for academics</h2>
+=======
+<div class="header-bar">
+  <h1>{{ site.blog_name }}</h1>
+  <h2>{{ site.blog_description }}</h2>
+>>>>>>> parent of c578cdc... updating publications [ci skip]
 </div>
 
 
 <ul class="post-list">
-  
+  {% for post in paginator.posts %}
     <li>
-      <h2><a class="post-title" href="/blog/2015/comments/">a post with comments</a></h2>
-      <p class="post-meta">October 20, 2015 — 08:59</p>
-      <p>an example of a blog post with comments</p>
+      <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
+      <p>{{ post.description }}</p>
     </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2015/math/">a post with math</a></h2>
-      <p class="post-meta">October 20, 2015 — 08:12</p>
-      <p>an example of a blog post with some math</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2015/code/">a post with code</a></h2>
-      <p class="post-meta">July 15, 2015 — 08:09</p>
-      <p>an example of a blog post with some code</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2015/images/">a post with images</a></h2>
-      <p class="post-meta">May 15, 2015 — 14:01</p>
-      <p>this is what included images could look like</p>
-    </li>
-  
+  {% endfor %}
 </ul>
 
+<<<<<<< HEAD
 
 <div class="pagination clearfix mb1 mt4">
   <div class="left">
@@ -189,3 +179,6 @@ ga('send', 'pageview');
   </body>
 
 </html>
+=======
+{% include pagination.html %}
+>>>>>>> parent of c578cdc... updating publications [ci skip]
