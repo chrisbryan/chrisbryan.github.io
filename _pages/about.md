@@ -18,8 +18,8 @@ social: true
 
 Quick Links:
 
-<span style='font-size:1.2em'>🌵</span> The [SVL @ ASU](cnn.com) (https://svl-at-asu.github.io/)
+<span style='font-size:1.2em'>🌵</span> The [SVL @ ASU](https://svl-at-asu.github.io/) (my research group)
 
-<span style='font-size:1.2em'>🔬</span> [Interested in joining the lab?](policies)
+<span style='font-size:1.2em'>🔬</span> [Interested in joining the lab? Read this first.](policies)
 
 <span style='font-size:1.2em'>📝 </span> [CV](assets/pdf/CV_July2019.pdf) (last updated July 2019)
