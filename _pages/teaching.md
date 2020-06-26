@@ -23,7 +23,6 @@ description: #Materials for courses you taught. Replace this text with your desc
 
 **Graduate Admissions Committee**, CIDSE, 2018 -- 2020
 
-
 ## External Service
 
 **Paper Reviewing**
