@@ -12,6 +12,10 @@ layout: default
     {{ content }}
   </article>
 
+  {% if page.selected_projects %}
+    {% include selected_projects.html %}
+  {% endif %}
+
   {% if page.news %}
     {% include news.html %}
   {% endif %}

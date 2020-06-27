@@ -7,14 +7,20 @@ description: <a href="https://isearch.asu.edu/node/311265/">Assistant Professor<
 profile:
   align: right
   image: profile.png
-  address: #>
+  # address: #>
 #    <p>555 your office number</p>
 #    <p>123 your address street</p>
 #    <p>Your City, State 12345</p>
 
-news: false
+selected_projects: true
 social: true
+news: false
+
 ---
+
+<!-- [Assistant Professor](https://isearch.asu.edu/node/311265/) in [CIDSE](https://cidse.engineering.asu.edu)<br/> -->
+<!-- [Arizona State University](https://www.asu.edu) -->
+
 
 Quick Links:
 

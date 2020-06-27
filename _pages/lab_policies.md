@@ -1,38 +1,37 @@
 ---
 layout: page
-permalink: /policies/
-title: Lab Policies
-description: <i>Last updated September 27, 2019</i>
+permalink: /prospective/
+title: Prospective Students
+description: <i>Last updated June 25, 2020</i>
 ---
 
-
+<!-- 
 <div style='border:0px solid gray;border-radius:5px;width:100%;color:maroon;font-weight:bold;font-size:1.1em;padding:5px;margin-bottom:10px;'>
 	<span style='font-size:1.2em'>🔬</span> Currently, I am not accepting or recruiting new Ph.D. students.
 </div>
+ -->
 
-If you are interested in conducting visualization or human-computer interaction (HCI) research under my supervision, use this page to familiarize yourself with expectations and basic lab practices.
+If you are interested in conducting visualization or human-computer interaction (HCI) research under my supervision, the following should give an overview of the process. I advise both Ph.D. and MS students, as well as ambitious undergraduates who want to gain research experience and/or complete a Barrett Honor Thesis. Currently, I am not accepting non-ASU students for internships, nor to I have volunteer positions available for MCS students.
 
-At ASU, I head the Sonoran Visualization Laboratory (the SVL @ ASU), where I advise both Ph.D. and MS students, as well as ambitious undergraduates who want to gain research experience and/or complete a Barrett Honor Thesis. Currently, I am not accepting non-ASU students for internships, nor to I have volunteer positions available for MCS students.
+
 
 ### What is visualization research?
 
-These posts give some nice perspectives of what researching visualization and HCI actually means:
+- [What is visualization research? What should it be?](https://medium.com/multiple-views-visualization-research-explained/what-is-visualization-research-what-should-it-be-8840a9ba658) by Jessica Hullman
+- [So you want a (visualization) Ph.D.?](https://medium.com/multiple-views-visualization-research-explained/so-you-want-a-visualization-ph-d-6e233122dcd7) by Niklas Elmqvist
+- [What is HCI research? And what is its relationship to computer science?](http://pgbovine.net/what-is-hci-research.htm) by Philip Guo
 
-- [What is visualization research? What should it be?](https://medium.com/multiple-views-visualization-research-explained/what-is-visualization-research-what-should-it-be-8840a9ba658)
-- [So you want a (visualization) Ph.D.?](https://medium.com/multiple-views-visualization-research-explained/so-you-want-a-visualization-ph-d-6e233122dcd7)
-- [What is HCI research? And what is its relationship to computer science?](http://pgbovine.net/what-is-hci-research.htm)
-
-A good way to familiarize yourself with the field is to look at what types of papers are being published. You can see lists of accepted papers at the major conferences, such as [IEEE Vis](http://ieeevis.org), [EuroVis](https://www.eurovis.org/), [PacificVis](http://www.pvis.org/), and [CHI](https://chi2019.acm.org/), and you can read through [lists of important papers](https://github.com/mathisonian/awesome-visualization-research) from the field.
+A good way to familiarize yourself with the field is to look at what types of papers are being published, both from SVL and by other authors in the field. You can see lists of accepted papers at the major conferences, such as [IEEE Vis](http://ieeevis.org), [EuroVis](https://www.eurovis.org/), [PacificVis](http://www.pvis.org/), and [CHI](https://chi2019.acm.org/), to see what types of research are being conducted.
 
 ### Interested in joining the Lab?
-- **Ph.D. students**
-	- If you would like me to consider you, please note so on your graduate application to ASU. Feel free to reach out via email after you have applied, so I will be sure to see your application. In general, having an online presence gives you a significant competitive advantage. This includes: (1) a LinkedIn profile and (2) a personal website that contains important academic information like published papers (with links to PDFs), a CV, contact information, a research statement, and brief descriptions of prior research/software/projects. I recommend that you link to these in your application's statement of purpose or CV.
-	- If you contact me prior to applying, there is a good chance that I won't respond. Unfortunately, faculty are regularly spammed with requests for assistantships, and it's easy to miss emails from earnest students. To help differentiate yourself from the crowd, you can include a brief personal statement describing some of the following:
-		- Why do you want to do research in the first place? More specifically, why do you want to research data visualization? What problems are you passionate about solving, and why is visualization a good tactic?
-		- What makes you a good fit for my lab? And why do you think I would be a good fit as your advisor?
-		- Do you have prior experience doing research or working in industry? Why will you be a successful Ph.D. student?
-		- As above, linking to items like your LinkedIn profile and personal website are highly recommended.
-	- In your first semester, you are expected to take the Data Visualization gradaute course (CSE 578) and do well in it. The course is designed to be research-focused, so it's a good primer for future research and allows us to get to know each other better. If you do poorly in CSE 578 or we realize there is a bad student-advisor fit, it's better for both of us if you switch to another lab. If you're research includes topics like VR or ML, take the corresponding classes ASAP.
+**Ph.D. students**
+- If you would like me to consider you, please note so on your graduate application to ASU. Feel free to reach out via email after you have applied, so I will be sure to see your application. In general, having an online presence gives you a significant competitive advantage. This includes: (1) a LinkedIn profile and (2) a personal website that contains important academic information like published papers (with links to PDFs), a CV, contact information, a research statement, and brief descriptions of prior research/software/projects. I recommend that you link to these in your application's statement of purpose or CV.
+- If you contact me prior to applying, there is a good chance that I won't respond. Unfortunately, faculty are regularly spammed with requests for assistantships, and it's easy to miss emails from earnest students. To help differentiate yourself from the crowd, you can include a brief personal statement describing some of the following:
+	- Why do you want to do research in the first place? More specifically, why do you want to research data visualization? What problems are you passionate about solving, and why is visualization a good tactic?
+	- What makes you a good fit for my lab? And why do you think I would be a good fit as your advisor?
+	- Do you have prior experience doing research or working in industry? Why will you be a successful Ph.D. student?
+	- As above, linking to items like your LinkedIn profile and personal website are highly recommended.
+- In your first semester, you are expected to take the Data Visualization gradaute course (CSE 578) and do well in it. The course is designed to be research-focused, so it's a good primer for future research and allows us to get to know each other better. If you do poorly in CSE 578 or we realize there is a bad student-advisor fit, it's better for both of us if you switch to another lab. If you're research includes topics like VR or ML, take the corresponding classes ASAP.
 - **MS Students**
 	- If you are interested in doing an MS thesis, you must first take CSE 578. During the semester, come to my office hours and we'll have an initial conversation. We'll review your work at the end of the class and make a decision then.
 - **Undergraduate Students**
