@@ -2,7 +2,7 @@
 layout: page
 permalink: /prospective/
 title: Prospective Students
-description: <i>Last updated June 25, 2020</i>
+description: <i>Last updated March 5, 2021</i>
 ---
 
 <!-- 
@@ -11,7 +11,7 @@ description: <i>Last updated June 25, 2020</i>
 </div>
  -->
 
-If you are interested in conducting visualization or human-computer interaction (HCI) research under my supervision, the following should give an overview of the process. I advise both Ph.D. and MS students, as well as ambitious undergraduates who want to gain research experience and/or complete a Barrett Honor Thesis. Currently, I am not accepting non-ASU students for internships, nor to I have volunteer positions available for MCS students.
+If you are interested in conducting **visualization** or **human-computer interaction (HCI)** research under my supervision, this page will give an overview of the process. I advise both Ph.D. and MS students, as well as ambitious undergraduates who want to gain research experience and/or complete a Barrett Honor Thesis. Currently, I am not accepting non-ASU students for internships, nor to I have volunteer positions available for MCS students.
 
 
 
@@ -19,9 +19,9 @@ If you are interested in conducting visualization or human-computer interaction 
 
 - [What is visualization research? What should it be?](https://medium.com/multiple-views-visualization-research-explained/what-is-visualization-research-what-should-it-be-8840a9ba658) by Jessica Hullman
 - [So you want a (visualization) Ph.D.?](https://medium.com/multiple-views-visualization-research-explained/so-you-want-a-visualization-ph-d-6e233122dcd7) by Niklas Elmqvist
-- [What is HCI research? And what is its relationship to computer science?](http://pgbovine.net/what-is-hci-research.htm) by Philip Guo
+<!-- - [What is HCI research? And what is its relationship to computer science?](http://pgbovine.net/what-is-hci-research.htm) by Philip Guo -->
 
-A good way to familiarize yourself with the field is to look at what types of papers are being published, both from SVL and by other authors in the field. You can see lists of accepted papers at the major conferences, such as [IEEE Vis](http://ieeevis.org), [EuroVis](https://www.eurovis.org/), [PacificVis](http://www.pvis.org/), and [CHI](https://chi2019.acm.org/), to see what types of research are being conducted.
+<!-- A good way to familiarize yourself with the field is to look at the types of research papers that are being published. You can see lists of accepted papers at the major conferences, such as [IEEE Vis](http://ieeevis.org), [EuroVis](https://www.eurovis.org/), [PacificVis](http://www.pvis.org/), and [CHI](https://chi2019.acm.org/), to see what types of research are being conducted. -->
 
 ### Interested in joining the Lab?
 **Ph.D. students**

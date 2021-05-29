@@ -1,0 +1,73 @@
+
+<style>
+    
+    .selected_project {
+        margin:10px;
+        border:1px solid lightgray;
+        border-radius:15px;
+        text-align: center;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.02), 
+                     0 2px 2px rgba(0,0,0,0.02), 
+                     0 4px 4px rgba(0,0,0,0.02), 
+                     0 8px 8px rgba(0,0,0,0.02),
+                     0 16px 16px rgba(0,0,0,0.02);
+        padding-bottom:10px;
+        margin-bottom:1em;
+    }
+    .selected_project:hover {
+        box-shadow:  0 1px 1px rgba(0,0,0,0.12), 
+                     0 2px 2px rgba(0,0,0,0.122), 
+                     0 4px 4px rgba(0,0,0,0.12), 
+                     0 8px 8px rgba(0,0,0,0.12),
+                     0 16px 16px rgba(0,0,0,0.12);
+        cursor: pointer;
+    }
+    .selected_project_title {
+        font-weight: bolder;
+        font-size: larger;
+    }
+    .selected_project img {
+        width:100%;
+        border-bottom:1px solid lightgray;
+        border-top-left-radius:15px;
+        border-top-right-radius:15px;
+    }
+    .selected_project_subtitle {
+        
+    }
+  </style>
+<script>
+    function goToPubs() {
+        window.open('https://svl-at-asu.github.io/publications/', '_blank');
+    }
+</script>
+
+<div class='news'>
+    <h2>Selected Projects</h2>
+        <!-- <div class="project_box col one left"> -->
+        <div class="col one left" >
+            <div class='selected_project' onclick='goToPubs();'>
+                <img src="{{ site.baseurl }}/assets/paper_img/constellations.png" alt="" title="example image"/>
+                <span class='selected_project_title'>Chart Constellations</span><br>
+                <span class='selected_project_subtitle'>EuroVis 2018</span>
+            </div>
+        </div>
+        <div class="col one left" >
+            <div class='selected_project' onclick='goToPubs();'>
+                <img src="{{ site.baseurl }}/assets/paper_img/graphprotector_highlight.png" alt="" title="example image"/>
+                <span class='selected_project_title'>GraphProtector</span><br>
+                <span class='selected_project_subtitle'>TVCG 2019</span>
+            </div>
+        </div>
+        <div class="col one left" >
+            <div class='selected_project' onclick='goToPubs();'>
+                <img src="{{ site.baseurl }}/assets/paper_img/talktraces.png" alt="" title="example image"/>
+                <span class='selected_project_title'>TalkTraces</span><br>
+                <span class='selected_project_subtitle'>CHI 2019</span>
+            </div>
+        </div>
+    </div>
+    <!-- <p> -->
+        <span style='font-size:1.2em;margin-left:1em;'>📄</span> See the <a class='highlight_link' href='https://svl-at-asu.github.io/publications/' target='blank'>publications</a> page for a full list of projects.
+    <!-- </p> -->
+</div>
