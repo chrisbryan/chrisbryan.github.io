@@ -10,9 +10,9 @@ title: Research
 
 <!-- Chris Bryan is an [assistant professor](https://isearch.asu.edu/node/311265/) of Computer Science at [Arizona State University](https://www.asu.edu/) in the [School of Computing, Informatics, & Decision Systems](https://cidse.engineering.asu.edu/) (CIDSE). His research spans the areas of data visualization, human-computer interaction, and data science. At ASU, he runs the Sonoran Visualization Laboratory (SVL @ ASU). He received his Ph.D. in 2018 from the University of California, Davis, as a part of the [VIDI lab](https://vidi.cs.ucdavis.edu). -->
 
-At Arizona State University, I lead the Sonoran Visualization Laboratory (SVL@ASU). The SVL researches data visualization, human-computer interaction, and advanced interfaces for data science. In our group, We develop advanced interfaces, algorithms, statistical models, and techniques to support analysis and decision making for complex data. We regularly collaborate with experts across a range of domains, including medical physicians, sociologists, power systems engineers, genomocists, security experts, and more. Current research projects are sponsored by ASU, Phoenix Children's Hospital, and NSF. 
+At Arizona State University, I lead the Sonoran Visualization Laboratory (SVL). The SVL researches data visualization, human-computer interaction, and advanced interfaces for data science. In our group, We develop advanced interfaces, algorithms, statistical models, and techniques to support analysis and decision making for complex data. We regularly collaborate with experts across a range of domains, including medical physicians, sociologists, power systems engineers, genomocists, security experts, and more. Current research projects are sponsored by ASU, Phoenix Children's Hospital, and NSF. 
 
-Current research topics and areas of interest are listed below. If you are interested in becoming a collaboratior with the SVL to better understand your data or increase productivity, feel free to <a href="mailto:cbryan16@asu.edu">email</a> and we can schedule a meeting to discuss further.
+Current research topics and areas of interest are listed below, though we also work broadly in visualization and machine learning spaces. If you are interested in becoming a collaboratior with the SVL to better understand your data or increase productivity, feel free to <a href="mailto:cbryan16@asu.edu">email</a> and we can schedule a meeting to discuss further.
 
 <hr>
 
@@ -52,7 +52,7 @@ Current research topics and areas of interest are listed below. If you are inter
       </div>
 </div>
 
-<h3>Visualization meets Machine Learning</h3>
+<h3>Machine Learning meets Visualization</h3>
 
 <div class="section group">
 	<div class="col span_1_of_3">

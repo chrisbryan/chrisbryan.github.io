@@ -4,6 +4,8 @@ permalink: /students/
 title: Students
 ---
 
+If you are a student (Ph.D., MS, or undergraduate) interested in joining the SVL, see the <a href='prospective/'>Prospective Students</a> page to learn about our lab policies.
+
 ### Ph.D. Students
 
 <div class="section group">

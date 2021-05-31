@@ -2,7 +2,7 @@
 layout: page
 permalink: /prospective/
 title: Prospective Students
-description: <i>Last updated March 5, 2021</i>
+description: <i>Last updated May 31, 2021</i>
 ---
 
 <!-- 
@@ -25,18 +25,20 @@ If you are interested in conducting **visualization** or **human-computer intera
 
 ### Interested in joining the Lab?
 **Ph.D. students**
-- If you would like me to consider you, please note so on your graduate application to ASU. Feel free to reach out via email after you have applied, so I will be sure to see your application. In general, having an online presence gives you a significant competitive advantage. This includes: (1) a LinkedIn profile and (2) a personal website that contains important academic information like published papers (with links to PDFs), a CV, contact information, a research statement, and brief descriptions of prior research/software/projects. I recommend that you link to these in your application's statement of purpose or CV.
-- If you contact me prior to applying, there is a good chance that I won't respond. Unfortunately, faculty are regularly spammed with requests for assistantships, and it's easy to miss emails from earnest students. To help differentiate yourself from the crowd, you can include a brief personal statement describing some of the following:
-	- Why do you want to do research in the first place? More specifically, why do you want to research data visualization? What problems are you passionate about solving, and why is visualization a good tactic?
-	- What makes you a good fit for my lab? And why do you think I would be a good fit as your advisor?
-	- Do you have prior experience doing research or working in industry? Why will you be a successful Ph.D. student?
-	- As above, linking to items like your LinkedIn profile and personal website are highly recommended.
-- In your first semester, you are expected to take the Data Visualization gradaute course (CSE 578) and do well in it. The course is designed to be research-focused, so it's a good primer for future research and allows us to get to know each other better. If you do poorly in CSE 578 or we realize there is a bad student-advisor fit, it's better for both of us if you switch to another lab. If you're research includes topics like VR or ML, take the corresponding classes ASAP.
-- **MS Students**
-	- If you are interested in doing an MS thesis, you must first take CSE 578. During the semester, come to my office hours and we'll have an initial conversation. We'll review your work at the end of the class and make a decision then.
-- **Undergraduate Students**
-	- If you want to do visualization research for your Barrett Thesis, email me with a brief description of what you'd like to work on and we'll set up a meeting. You should come prepared to present a high-level outline of what type of work you'd like to do, what you think the inherent challenges will be, and a rough timeline describing how your goal can be accomplished.
-	- If you are just wanting to get research experience as an undergraduate, I am also happy to let you join a graduate student's project if I have an opening. I cannot provide funding for undergraduates, though I am open to letting you conduct research for course credit. In addition, the FURI program at ASU (which you should certainly apply for!) provides a nice stipend for doing research.
+- If you would like me to consider you, please note so on your graduate application to ASU. Feel free to reach out via email after you have applied, so I will be sure to see your application. In general, having an online presence gives you a significant competitive advantage. This includes: (1) a LinkedIn profile and (2) a personal website that contains important academic information like any published papers (with links to PDFs), a CV, contact information, a research statement, portfolio, etc. I recommend that you link to these in your application's statement of purpose or CV!
+- If you contact me prior to applying, there is a chance that I won't respond. Unfortunately, faculty receive many requests for assistantships from prospective students before they've applied, which makes it easy to miss emails from earnest students. To help differentiate yourself from the crowd, you can include a brief personal statement describing some of the following:
+	- Why do you want to do research in the first place (i.e., what types of problems are you passionate about solving)? More specifically, why do you want to do visualization research? 
+	- Why do you think I would be a good fit as your advisor?
+	- Do you have prior experience doing research or working in industry? What makes you think you be a successful Ph.D. student?
+	- As above, linking to items like your LinkedIn profile and personal website are highly recommended!
+- In your first semester, you are expected to take the Data Visualization gradaute course (CSE 578) and do well in it. The course is designed to be research-focused, so it's a good primer for future research and allows us to get to know each other better. If you do poorly in CSE 578 or we realize there is a bad student-advisor fit, it's better for both of us if you switch to another lab.
+
+**MS Students**
+- If you are interested in doing an MS thesis, you must first take CSE 578. During the semester, come to my office hours and we'll have an initial conversation. We'll review your work at the end of the class and make a decision then.
+
+**Undergraduate Students**
+- If you want to do visualization research for your Barrett Thesis, email me with a brief description of what you'd like to work on and we'll set up a meeting. Be prepared to present a high-level outline of what type of work you'd like to do, what you think the main challenges will be, and a rough timeline describing how you think you can accomplish your goal.
+- If you are just wanting to get research experience as an undergraduate, I am also happy to let you join a graduate student's project if I have an opening. I cannot provide funding for undergraduates, though I am open to letting you conduct research for course credit. In addition, the FURI program at ASU (which you should certainly apply for!) provides a nice stipend for doing research.
 	
 ## Supervision
 - **Mentoring**: I believe that, especially early on, clear communication is extremely important from the advisor to the Ph.D. student. New students in a research field almost always need guidance, especially about what constitutes good *publishable* research and how to plan and successfully execute research projects. A good analogy is bicycle training wheels; they prevent you from falling over while you’re learning to ride on your own. If you keep falling over, you'll quickly get discouraged and not want to continue (and your productivity will plummet). When starting out, you'll be closely mentored either by myself or a senior student. As you gain experience, becoming proficient at conducting projects and publishing papers, you'll begin to take a leadership role in the lab, mentoring and helping younger students. Depending on your post-graduation goals (get an industry job, become a professor, work in a research lab, etc.), I will work to put you in a position to succeed, such as coordinating internships and networking with other academic institutions. When my students do well and succeed, it not only makes me happy, but it's good for our lab. I want to make sure you succeed!
