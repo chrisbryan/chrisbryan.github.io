@@ -37,7 +37,7 @@ Current research topics and areas of interest are listed below. If you are inter
             <img class="thumbnail" src="{{ 'navigable_videos.png' | prepend: '/assets/paper_img/' | prepend: site.baseurl | prepend: site.url }}">
 	</div>
 	<div class="col span_2_of_3">
-            As technology for virtual and augmented reality improves, we can exploit such immersive spaces for visualizing and analyzing data. We are developing novel applications and techniques for displaying and analyzing 3D scientific and medical data, and are studying how immersive modalities affect the ways that users interact with such data, and also how they affect collaboration between multiple people.
+            As the technologies for virtual and augmented reality improve, we can exploit such immersive spaces for visualizing and analyzing data. We are developing novel applications and techniques for displaying and analyzing 3D scientific and medical data, and are studying how immersive modalities affect the ways that users interact with such data, and also how they affect collaboration between multiple people.
 	</div>
 </div>
 
@@ -48,18 +48,19 @@ Current research topics and areas of interest are listed below. If you are inter
             <img class="thumbnail" src="{{ 'wang2020umbra.png' | prepend: '/assets/paper_img/' | prepend: site.baseurl | prepend: site.url }}">
       </div>
       <div class="col span_2_of_3">
-            Disclosure of sensitive information is an increasing problem in today's society. We build visual interfaces to help analysts understand how datasets can leak information, and how such data can be manipulated to preserve the privacy of users with minimum overall data loss.
+            Disclosure of sensitive information is an increasing problem in today's society. We build visual interfaces to help analysts understand how datasets can leak information, and how such data can be sanitized to preserve the privacy of users with minimum overall data loss.
       </div>
 </div>
 
-<h3>VisML and VisAI (Vis meets Machine Learning)</h3>
+<h3>Visualization meets Machine Learning</h3>
 
 <div class="section group">
 	<div class="col span_1_of_3">
             <img class="thumbnail" src="{{ 'visml.png' | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
       </div>
       <div class="col span_2_of_3">
-            Increasingly, machine learning is being incorporated into visualization research. This can include using visualization to help understand machine learning models and predictions (explainable AI and opening the black box of machine learning). For example, we leverage visualization to understand model performance and to assess datasets (benchmarks) that machine learning models are trained on. Conversely, machine learning can be employed to guide the visual analytics process.
+            <!-- Increasingly, machine learning is being used with visualization.  -->
+            We employ visualization as a way to help understand the behavior of machine learning models, "opening the black box" to promote trust and interpretability. We also study bias and spurious correlations that can exist in datasets that are used to train machine learning models. Conversely, machine learning can be use to help guide the visualization and analysis process, such as selecting appropriate visualizations to show a user during exploration.
       </div>
 </div>
 
