@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="h-100">
+    <head>
+        <title>Teaching | Chris Bryan</title>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="/assets/styles/font-awesome-4.7.0/css/font-awesome.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+        <style>
+          div {
+            width:100%;
+            height:100vw;
+          }
+        </style>
+    </head>
+    
+    <body class="d-flex flex-column h-100">
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border border-bottom">
+                <div class="container">
+                  <a class="navbar-brand link-dark" href="/">Chris Bryan</a>
+                  <button class="navbar-toggler toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse align-left" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link mx-2" href="/">
+                            <i class="bi bi-house"></i>
+                            Home
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-2" href="/research/">
+                            <i class="bi-speedometer"></i>
+                            Research
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-2" href="/students/">
+                            <i class="bi-person-square"></i>
+                            Students
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-2" href="/publications/">
+                            <i class="bi-stack"></i>
+                            Publications
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-2 active" href="/teaching/">
+                            <i class="fa fa-mortar-board" aria-hidden="true"></i>
+                            Teaching
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-2" href="/service/">
+                            <i class="bi-upc-scan"></i>
+                            Service
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-2" href="mailto:cbryan16@asu.edu">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            Contact Me
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-shrink-1">
+          <div class="container">
+            <h1 class="mt-4">Song Spinner</h1>
+            <p>
+              Pick a class and click the wheel to spin:
+              <select onchange="updateWheel()" id="classWheel">
+                <option>CSE 494</option>
+                <option>CSE 578</option>
+              </select> 
+            </p>
+            <svg id="roulette">
+
+            </svg>
+          </div>
+        </main>
+        <script>
+
+          // onLoad or onPage resize, draw/redraw the wheel
+          function updateWheel() {
+            var course = d3.select('#classWheel');
+          }
+        </script>
+        <footer class="footer mt-auto py-3 bg-light border border-top" id="footer">
+          <script>
+              $(function() {
+                  $("#footer").load("/assets/html/footer.html");
+              });
+          </script>
+      </footer>
+    </body>
+</html>
