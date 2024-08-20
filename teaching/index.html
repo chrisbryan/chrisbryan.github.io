@@ -13,61 +13,12 @@
     
     <body class="d-flex flex-column h-100">
     
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border border-bottom">
-                <div class="container" style="max-width:1000px;">
-                  <a class="navbar-brand link-dark" href="/">Chris Bryan</a>
-                  <button class="navbar-toggler toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse align-left" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/">
-                            <i class="bi bi-house"></i>
-                            Home
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/research/">
-                            <i class="bi-speedometer"></i>
-                            Research
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/students/">
-                            <i class="bi-person-square"></i>
-                            Students
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/publications/">
-                            <i class="bi-stack"></i>
-                            Publications
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2 active" aria-current="page" href="/teaching/">
-                            <i class="fa fa-mortar-board" aria-hidden="true"></i>
-                            Teaching
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/service/">
-                            <i class="bi-upc-scan"></i>
-                            Service
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="mailto:cbryan16@asu.edu">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            Contact
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-            </nav>
+        <header id="header">
+            <script>
+                $(function() {
+                    $("#header").load("/assets/html/header.html");
+                });
+              </script>
         </header>
 
         <main class="flex-shrink-1">
@@ -78,6 +29,12 @@
                     All classes taught at Arizona State University, unless otherwise noted.
                 </p>
                 <hr>
+                <h4>
+                    Spring 2024
+                </h4>
+                <ul>
+                    <li><strong>CSE 578: Data Visualization</strong>, 145 students</li>
+                </ul>
                 <h4>
                     Fall 2023
                 </h4>

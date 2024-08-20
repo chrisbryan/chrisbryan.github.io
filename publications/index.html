@@ -13,61 +13,12 @@
 
     <body class="d-flex flex-column h-100">
     
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border border-bottom">
-                <div class="container" style="max-width:1000px;">
-                  <a class="navbar-brand link-dark" href="/">Chris Bryan</a>
-                  <button class="navbar-toggler toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse align-left" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/">
-                            <i class="bi bi-house"></i>
-                            Home
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/research/">
-                            <i class="bi-speedometer"></i>
-                            Research
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/students/">
-                            <i class="bi-person-square"></i>
-                            Students
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2 active" aria-current="page" href="/publications/">
-                            <i class="bi-stack"></i>
-                            Publications
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/teaching/">
-                            <i class="fa fa-mortar-board" aria-hidden="true"></i>
-                            Teaching
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/service/">
-                            <i class="bi-upc-scan"></i>
-                            Service
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="mailto:cbryan16@asu.edu">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            Contact
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-            </nav>
+        <header id="header">
+            <script>
+                $(function() {
+                    $("#header").load("/assets/html/header.html");
+                });
+              </script>
         </header>
 
 
@@ -81,13 +32,34 @@
                 <div class="row">
 
                     <div class="col-2 my-2">
+                        <img class="border rounded shadow img-fluid" src="/assets/img_papers/arunkumar2025mind.png" data-holder-rendered="true">
+                    </div>
+                    <div class="col-10 my-2">
+                        Anjana Arunkumar, Lace Padilla, and Chris Bryan. 
+                        <b>Mind Drifts, Data Shifts: Utilizing Mind Wandering to Track the Evolution of User Experience with Data Visualizations.</b>
+                        <i>accepted to IEEE VIS 2024, to be published in IEEE Transactions on Visualization and Computer Graphics.</i> <br/>
+                        <a href="https://arxiv.org/abs/2408.03576" class="link-danger" target="_blank">ArXiv Preprint</a>
+                    </div>
+
+                    <div class="col-2 my-2">
+                        <img class="border rounded shadow img-fluid" src="/assets/img_papers/wang2025defogger.png" data-holder-rendered="true">
+                    </div>
+                    <div class="col-10 my-2">
+                        Xumeng Wang, Shuangcheng Jiao, and Chris Bryan. 
+                        <b>Defogger: A Visual Analysis Approach for Data Exploration of Sensitive Data Protected by Differential Privacy.</b>
+                        <i>accepted to IEEE VIS 2024, to be published in IEEE Transactions on Visualization and Computer Graphics.</i> <br/>
+                        <a href="/assets/pdf/wang2025defogger.pdf" class="link-danger" target="_blank">Paper</a>
+                    </div>
+
+                    <div class="col-2 my-2">
                         <img class="border rounded shadow img-fluid" src="/assets/img_papers/arunkumar2023image.png" data-holder-rendered="true">
                     </div>
                     <div class="col-10 my-2">
                         Anjana Arunkumar, Lace Padilla, Gi-Yeul Bae, and Chris Bryan. 
                         <b>Image or Information? Examining the Nature and Impact of Visualization Perceptual Classification.</b>
-                        <i>accepted to IEEE VIS 2023.</i> <br/>
-                        <a href="https://arxiv.org/abs/2307.10571" class="link-danger" target="_blank">Preprint</a> |
+                        <i>IEEE Transactions on Visualization and Computer Graphics, 30.1, pp. 1030-1040, 2024.</i> <br/>
+                        <a href="https://ieeexplore.ieee.org/document/10294209" class="link-danger" target="_blank">DOI</a> |
+                        <a href="/assets/pdf/arunkumar2024image.pdf" class="link-danger" target='_blank'>Paper</a> |
                         <a href="https://github.com/aarunku5/Image-or-Information-Vis-2023" class="link-danger" target="_blank">Supplementary Materials</a>
                     </div>
 

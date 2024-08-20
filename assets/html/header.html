@@ -1,0 +1,80 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light border border-bottom">
+    <div class="container" style="max-width: 1000px">
+      <a class="navbar-brand link-dark" href="/" id="name-link">Chris Bryan</a>
+      <button class="navbar-toggler toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse align-left" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="/" id="home-link">
+                <i class="bi bi-house"></i>
+                Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="/research/" id="research-link">
+                <i class="bi-speedometer"></i>
+                Research
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="/students/" id="students-link">
+                <i class="bi-person-square"></i>
+                Students
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="/publications/" id="publications-link">
+                <i class="bi-stack"></i>
+                Publications
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="/teaching/" id="teaching-link">
+                <i class="fa fa-mortar-board"></i>
+                Teaching
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="/service/" id="service-link">
+                <i class="bi-upc-scan"></i>
+                Service
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="mailto:cbryan16@asu.edu" id="contact-link">
+                <i class="fa fa-envelope" ></i>
+                Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<script>
+    function getCurrentURL () {
+        return window.location.href
+    }
+    const url = getCurrentURL();
+
+    if(url.includes("/research/")) {
+        $("#research-link").addClass('active');
+    } else if(url.includes("/students/")) {
+        $("#students-link").addClass('active');
+    } else if(url.includes("/publications/")) {
+        $("#publications-link").addClass('active');
+    } else if(url.includes("/teaching/")) {
+        $("#teaching-link").addClass('active');
+    } else if(url.includes("/service/")) {
+        $("#service-link").addClass('active');
+    } else if(url.includes("/policies/")) { 
+        // do nothin'
+    } else {
+        $("#home-link").addClass('active');
+        $("#name-link").addClass('d-none');
+    }
+</script>

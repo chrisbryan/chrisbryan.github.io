@@ -12,61 +12,12 @@
     </head>
     <body class="d-flex flex-column h-100">
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border border-bottom">
-                <div class="container" style="max-width:1000px;">
-                  <a class="navbar-brand link-dark" href="/">Chris Bryan</a>
-                  <button class="navbar-toggler toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse align-left" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/">
-                            <i class="bi bi-house"></i>
-                            Home
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2 active" aria-current="page" href="/research/">
-                            <i class="bi-speedometer"></i>
-                            Research
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/students/">
-                            <i class="bi-person-square"></i>
-                            Students
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/publications/">
-                            <i class="bi-stack"></i>
-                            Publications
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/teaching/">
-                            <i class="fa fa-mortar-board" aria-hidden="true"></i>
-                            Teaching
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/service/">
-                            <i class="bi-upc-scan"></i>
-                            Service
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="mailto:cbryan16@asu.edu">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            Contact
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-            </nav>
+        <header id="header">
+            <script>
+                $(function() {
+                    $("#header").load("/assets/html/header.html");
+                });
+              </script>
         </header>
 
         <main class="flex-shrink-1 mb-5">
@@ -79,7 +30,7 @@
                 <hr>
                 <div class='row'>
                     <div class='col-12 mt-4'>
-                        <h3>Exploratory Visual Analytics for Complex Data</h3>
+                        <h3>Visual Analytics for Complex Data</h3>
                     </div>
                     <div class='col-4'>
                         <img class="rounded shadow img-fluid border" src="/assets/img_papers/mishra2022news.png" data-holder-rendered="true">
@@ -135,7 +86,7 @@
                         <img class="rounded shadow img-fluid border" src="/assets/img_papers/arunkumar2021bayesian.png" data-holder-rendered="true">
                     </div>
                     <div class='col-8'>
-                        We study the low-level cognitive and attentional processes that enable vision and perception, in the context of visualizing data. We run eye tracking studies using a Tobii X2-60, and conduct large-scale crowdsourced user studies to analyze visualizations.
+                        We study the low-level cognitive and attentional processes that enable vision and perception, in the context of visualizing data. We also run eye tracking studies using a Tobii X2-60, and conduct large-scale crowdsourced user studies to analyze visualizations.
                     </div>
             </div>
         </main>

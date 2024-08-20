@@ -13,61 +13,12 @@
 
     <body class="d-flex flex-column h-100">
     
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border border-bottom">
-                <div class="container" style="max-width:1000px;">
-                  <a class="navbar-brand link-dark" href="/">Chris Bryan</a>
-                  <button class="navbar-toggler toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse align-left" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/">
-                            <i class="bi bi-house"></i>
-                            Home
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/research/">
-                            <i class="bi-speedometer"></i>
-                            Research
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2  active" aria-current="page" href="/students/">
-                            <i class="bi-person-square"></i>
-                            Students
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/publications/">
-                            <i class="bi-stack"></i>
-                            Publications
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/teaching/">
-                            <i class="fa fa-mortar-board" aria-hidden="true"></i>
-                            Teaching
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="/service/">
-                            <i class="bi-upc-scan"></i>
-                            Service
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-2" href="mailto:cbryan16@asu.edu">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            Contact
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-            </nav>
+        <header id="header">
+            <script>
+                $(function() {
+                    $("#header").load("/assets/html/header.html");
+                });
+              </script>
         </header>
 
         <main class="flex-shrink-1">
@@ -80,31 +31,129 @@
                 <hr>
                 <h2>Current Students</h2>
 
-                    <div class='row mt-3 mx-2'>
+                    <div class='row mt-3 mx-2 mb-5'>
                         <div class='col-sm-2'>
-                            <img class="rounded shadow img-fluid border" 
-                                    src="/assets/img_people/aditi.jpeg"                                         data-holder-rendered="true">
+                            <img class="rounded shadow img-fluid border" src="/assets/img_people/aditi.jpeg" data-holder-rendered="true">
                         </div>
-                        <div class='col-sm-5'>
+                        <div class='col-sm-4 mb-5'>
                             <strong>Aditi Mishra</strong><br>
-                            Ph.D. Student<br>
+                            Ph.D. Candidate<br>
                             B.S., IIIT, Bhubaneswar
                             <br><br>
                             🔬&nbsp;&nbsp;Visual Analytics, Explainable AI<br>
                             <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/aditi-mishra-898222109/" target="_blank" class="link-danger">LinkedIn</a> <br>
                             🔗&nbsp;&nbsp;<a href="https://aditi96.github.io/" target="_blank" class="link-danger">Personal Site</a>
                         </div>
-                        <div class='col-sm-5 d-none d-sm-block'>
-                            <img class="rounded shadow img-fluid border mt-1" 
-                                    src="/assets/img_papers/mishra2022why.png"
-                                    data-holder-rendered="true" style="max-width:150px">
-                            <p class="mt-3 text-muted small">
-                                <b>Example publication:</b> <i>Why? Why not? When? Visual Explanations of Agent Behaviour in Reinforcement Learning</i> (PacificVis 2022)
-                            </p>           
+                        
+                        <div class='col-sm-2 mb-5'>
+                            <img class="rounded shadow img-fluid border" src="/assets/img_people/jinbin.jpg" data-holder-rendered="true">
                         </div>
+                        <div class='col-sm-4 mb-5'>
+                            <strong>Jinbin Huang</strong><br>
+                            Ph.D. Candidate<br>
+                            B.S., Sun Yat-Sen Univeresity<br><br>
+                            🔬&nbsp;&nbsp;Explainable AI, Mixed Reality
+                            <br>
+                            <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="" target="_blank" class="link-danger">LinkedIn</a> <br>
+                            🔗&nbsp;&nbsp;<a href="https://jakobwong.github.io/" target="_blank" class="link-danger">Personal Site</a> 
+                        </div>
+
+                        <div class='col-sm-2 mb-5'>
+                            <img class="rounded shadow img-fluid border" 
+                                    src="/assets/img_people/michael.jpeg"                                         data-holder-rendered="true">
+                        </div>
+                        <div class='col-sm-4 mb-5'>
+                            <strong>Michael Kintscher</strong><br>
+                            Ph.D. Student<br>
+                            B.S. and M.S., Arizona State University<br><br>
+                            🔬&nbsp;&nbsp;Collaborative Visualization<br>
+                            <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/michaelkintscher/" target="_blank" class="link-danger">LinkedIn</a><br>
+                            <i class="bi bi-github"></i>&nbsp;&nbsp;<a href="https://github.com/MichaelKintscher" target="_blank" class="link-danger">GitHub</a>
+                        </div>
+
+                        <div class='col-sm-2 mb-5'>
+                            <img class="rounded shadow img-fluid border" 
+                                    src="/assets/img_people/bretho.jpg"                                         data-holder-rendered="true">
+                        </div>
+                        <div class='col-sm-4 mb-5'>
+                            <strong>Bretho Danzy</strong><br>
+                            Ph.D. Student<br>
+                            B.S. and M.S., Miami (Ohio) University<br><br>
+                            🔬&nbsp;&nbsp;Visual Analytics, Data Privacy<br>
+                        </div>
+
+                        
+                        <div class='col-sm-2 mb-5'>
+                            <img class="rounded shadow img-fluid border" 
+                                    src="/assets/img_people/zhuojun.png"                                         data-holder-rendered="true">
+                        </div>
+                        <div class='col-sm-4 mb-5'>
+                            <strong>Zhuojun Jiang</strong><br>
+                            Ph.D. Student<br>
+                            B.E., Chongqing University<br>
+                            M.S., Tokyo Metropolitan University<br><br>
+                            🔬&nbsp;&nbsp;Cognition & Perception<br>
+                            🔗&nbsp;&nbsp;<a href="https://sites.google.com/view/zhuojun-jiang" target="_blank" class="link-danger">Personal Site</a>
+                        </div>
+
+                        
+
+
+                        <div class='col-sm-2 mb-5'>
+                            <img class="rounded shadow img-fluid border" 
+                                    src="/assets/img_people/shubhamchawla.jpeg"
+                                    data-holder-rendered="true">
+                        </div>
+                        <div class='col-sm-4 mb-5'>
+                            <strong>Shubham Chawla</strong><br>
+                            M.S. Student<br>
+                            B.Tech., Thapar Institute of Engineering & Technology<br><br>
+                            🔬&nbsp;&nbsp;Visualization for Education<br>
+                            <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/shubham1chawla/" target="_blank" class="link-danger">LinkedIn</a>
+                        </div>
+
+                        <div class='col-sm-2 mb-5'>
+                            <img class="rounded shadow img-fluid border" 
+                                    src="/assets/img_people/sruthi.jpeg"
+                                    data-holder-rendered="true">
+                        </div>
+                        <div class='col-sm-4 mb-5'>
+                            <strong>Sruthi Parimi</strong><br>
+                            M.S. Student<br>
+                            B.E., Sreenidhi Institute of Science & Technology<br><br>
+                            🔬&nbsp;&nbsp;Cognition & Perception<br>
+                            <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/sruthi-samhitha-parimi/" target="_blank" class="link-danger">LinkedIn</a>
+                        </div>
+
+                        <div class='col-sm-2 mb-5'>
+                            <img class="rounded shadow img-fluid border" 
+                                    src="/assets/img_people/utkarshsingh.png"
+                                    data-holder-rendered="true">
+                        </div>
+                        <div class='col-sm-4 mb-5'>
+                            <strong>Utkarsh Singh</strong><br>
+                            M.S. Student<br>
+                            B.Tech., SRM Institute of Technology<br><br>
+                            🔬&nbsp;&nbsp;Advanced UIs for LLMs<br>
+                            <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/shubham1chawla/" target="_blank" class="link-danger">LinkedIn</a>
+                        </div>
+
+                        <div class='col-sm-2 mb-5'>
+                            <img class="rounded shadow img-fluid border" 
+                                    src="/assets/img_people/kannaksharma.jpeg"
+                                    data-holder-rendered="true">
+                        </div>
+                        <div class='col-sm-4 mb-5'>
+                            <strong>Kannak Sharma</strong><br>
+                            M.S. Student<br>
+                            B.Tech., Thapar Institute of Engineering & Technology<br><br>
+                            🔬&nbsp;&nbsp;Gen AI for Medical Imaging<br>
+                            <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/kannak-sharma/" target="_blank" class="link-danger">LinkedIn</a>
+                        </div>
+
                     </div>
 
-                    <div class='row mt-5 mx-2'>
+                    <!-- <div class='row mt-5 mx-2'>
                         <div class='col-sm-2'>
                             <img class="rounded shadow img-fluid border" 
                                     src="/assets/img_people/anjana.jpeg"                                         data-holder-rendered="true">
@@ -118,93 +167,29 @@
                             <br>
                             <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/anjana-arunkumar-55820a179/" target="_blank" class="link-danger">LinkedIn</a> <br>
                             🔗&nbsp;&nbsp;<a href="https://aarunku5.github.io" target="_blank" class="link-danger">Personal Site</a> 
-                        </div>
-                        <div class='col-sm-5 d-none d-sm-block'>
+                        </div> -->
+                        <!-- <div class='col-sm-5 d-none d-sm-block'>
                             <img class="rounded shadow img-fluid border mt-1" 
                                     src="/assets/img_papers/arunkumar2022pmutracker.png"
                                     data-holder-rendered="true" style="max-width:150px">
                             <p class="mt-3 text-muted small">
                                 <b>Example publication:</b> <i>PMU Tracker: A Visualization Platform for Epicentric Event Propagation Analysis in the Power Grid</i> (VIS 2022 / TVCG 2023)
                             </p>   
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
 
-                    <div class='row mt-5 mx-2'>
-                        <div class='col-sm-2'>
-                            <img class="rounded shadow img-fluid border" 
-                                    src="/assets/img_people/jinbin.png"                                         data-holder-rendered="true">
-                        </div>
-                        <div class='col-sm-5'>
-                            <strong>Jinbin Huang</strong><br>
-                            Ph.D. Student<br>
-                            B.S., Sun Yat-Sen Univeresity<br><br>
-                            🔬&nbsp;&nbsp;Explainable AI, Mixed Reality
-                            <br>
-                            <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="" target="_blank" class="link-danger">LinkedIn</a> <br>
-                            🔗&nbsp;&nbsp;<a href="https://jakobwong.github.io/" target="_blank" class="link-danger">Personal Site</a> 
-                        </div>
-                        <div class='col-sm-5 d-none d-sm-block'>
+                   
+
+                
+
+                        <!-- <div class='col-sm-5 d-none d-sm-block'>
                             <img class="rounded shadow img-fluid border mt-1" 
-                                    src="/assets/img_papers/huang2022conceptexplainer.png"
+                                    src="/assets/img_papers/mishra2022why.png"
                                     data-holder-rendered="true" style="max-width:150px">
                             <p class="mt-3 text-muted small">
-                                <b>Example publication:</b> <i>ConceptExplainer: Understanding the Mental Model of Deep Learning Algorithms via Interactive Concept-based Explanations</i> (VIS 2022 / TVCG 2023)
-                            </p>   
-                        </div>
-                    </div>
-
-                    <div class='row mt-5 mx-2'>
-                        <div class='col-sm-2'>
-                            <img class="rounded shadow img-fluid border" 
-                                    src="/assets/img_people/michael.jpeg"                                         data-holder-rendered="true">
-                        </div>
-                        <div class='col-sm-5'>
-                            <strong>Michael Kintscher</strong><br>
-                            Ph.D. Student<br>
-                            B.S. and M.S., Arizona State University<br><br>
-                            🔬&nbsp;&nbsp;Collaborative Visualization<br>
-                            <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/michaelkintscher/" target="_blank" class="link-danger">LinkedIn</a><br>
-                            <i class="bi bi-github"></i>&nbsp;&nbsp;<a href="https://github.com/MichaelKintscher" target="_blank" class="link-danger">GitHub</a>
-                        </div>
-                        <div class='col-sm-5 d-none d-sm-block'>
-                            <img class="rounded shadow img-fluid border mt-1" 
-                                    src="/assets/img_papers/kintscher2023measuring.jpg"
-                                    data-holder-rendered="true" style="max-width:150px">
-                            <p class="mt-3 text-muted small">
-                                <b>Example publication:</b> <i>Comparing Collaborative Visualization Behaviors in Desktop and Augmented Reality Environments</i> (VRST 2023)
-                            </p>   
-                        </div>
-                    </div>
-
-                <div class='row mt-5 mx-2'>
-                    <div class='col-sm-2'>
-                        <img class="rounded shadow img-fluid border" 
-                                src="/assets/img_people/jai.jpg"
-                                data-holder-rendered="true">
-                    </div>
-                    <div class='col-sm-8'>
-                        <strong>Jai Narula</strong><br>
-                        M.S. Student<br>
-                        B.Tech., Thapar Institute of Engineering & Technology<br><br>
-                        🔬&nbsp;&nbsp;Visualization for Education<br>
-                        <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/jai-narula-821421166/" target="_blank" class="link-danger">LinkedIn</a>
-                    </div>
-                </div>
-
-                <div class='row mt-5 mx-2'>
-                    <div class='col-md-2 col-sm-6'>
-                        <img class="rounded shadow img-fluid border" 
-                                src="/assets/img_people/manimozhi.jpg"
-                                data-holder-rendered="true">
-                    </div>
-                    <div class='col-md-8 col-sm-6'>
-                        <strong>Manimozhi Sekar</strong><br>
-                        M.S. Student<br>
-                        B.Tech., National Institute of Technology, Tiruchirappalli<br><br>
-                        🔬&nbsp;&nbsp;Privacy-Preserving Visualization<br>
-                        <!-- <i class="bi bi-linkedin"></i>&nbsp;&nbsp;<a href="" target="_blank" class="link-danger">LinkedIn</a> -->
-                    </div>
-                </div>
+                                <b>Example publication:</b> <i>Why? Why not? When? Visual Explanations of Agent Behaviour in Reinforcement Learning</i> (PacificVis 2022)
+                            </p>           
+                        </div> -->
 
                 <hr>
                 <h2>Former Students</h2> 
@@ -212,7 +197,43 @@
                 <p>
                     <ul>
                         <li>
-                            <strong>Shubham Sharma</strong>
+                            <strong>Dr. Anjana Arunkumar</strong> (<a href="https://aarunku5.github.io/" target="_blank" class="link-danger">Personal Site</a>)
+                            <ul>
+                                <li>Ph.D. Student, 2019 - 2024 (dissertation title: <i>The D.U.C.K. Bridge: Empowering Non-Experts in Data Visualization</i>)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Manimozhi Sekar</strong>
+                            <ul>
+                                M.S. Student, 2022 - 2024 (thesis title: <i>Privacy-Preserving Visualizations using Vega-Lite</i>)
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Jai Narula</strong> (<a href="https://www.linkedin.com/in/jainarula16/" target="_blank" class="link-danger">LinkedIn</a>)
+                            <ul>
+                                M.S. Student, 2022 - 2024 (thesis title: <i>Developing an Assistive Education Tool for Data Visualization</i>)
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Roshni Deb</strong>
+                            <ul>
+                                Undergraduate Barrett Honors Creative Project, 2024 (project title: <i>Developing an Assistive Education Tool for Data Visualization</i>)
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Dheeti Deliwala</strong>
+                            <ul>
+                                Undergraduate Barrett Honors Creative Project, 2024 (project title: <i>Visualizing Space-Related Activities Across the World</i>)
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Andrew Murwin</strong>
+                            <ul>
+                                Undergraduate Barrett Honors Thesis, 2024 (thesis title: <i>The Efficacy of Different Time Steps in Data when Predicting Cryptocurrency Prices</i>)
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Shubham Sharma</strong> (<a href="https://www.linkedin.com/in/shubham-sharma3/" target="_blank" class="link-danger">LinkedIn</a>)
                             <ul>
                                 M.S. Student, 2021 - 2022 (thesis title: <i>Why Pop? A System to Explain How Deep Learning Models Classify Music</i>)
                             </ul>
@@ -224,13 +245,13 @@
                             </ul>
                         </li>
                         <li>
-                            <strong>Jaimie Liu</strong>
+                            <strong>Jaimie Liu</strong> (<a href="https://www.linkedin.com/in/jaimie-liu-1525b61a1/" target="_blank" class="link-danger">LinkedIn</a>)
                             <ul>
                                 Undergraduate RA, 2021 - 2022
                             </ul>
                         </li>
                         <li>
-                            <strong>Shashank Ginjpalli</strong>
+                            <strong>Shashank Ginjpalli</strong> (<a href="https://www.linkedin.com/in/shashank-ginjpalli/" target="_blank" class="link-danger">LinkedIn</a>)
                             <ul>
                                 <li>Undergraduate RA and Barrett Honors Thesis, 2019 – 2021 (thesis title: <i>Modeling the Complexity of Sankey Diagrams)</i></li>
                                 <li>FURI Awards: Spring 2020, Spring 2021</li>

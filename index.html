@@ -13,61 +13,12 @@
 
     <body class="d-flex flex-column h-100">
     
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light border border-bottom">
-            <div class="container"  style="max-width:1000px;">
-              <a class="navbar-brand link-dark d-none" href="#">Chris Bryan</a>
-              <button class="navbar-toggler toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse align-left" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link mx-2 active" aria-current="page" href="/">
-                        <i class="bi bi-house"></i>
-                        Home
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2" href="/research/">
-                        <i class="bi-speedometer"></i>
-                        Research
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2" href="/students/">
-                        <i class="bi-person-square"></i>
-                        Students
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2" href="/publications/">
-                        <i class="bi-stack"></i>
-                        Publications
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2" href="/teaching/">
-                        <i class="fa fa-mortar-board" aria-hidden="true"></i>
-                        Teaching
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2" href="/service/">
-                        <i class="bi-upc-scan"></i>
-                        Service
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2" href="mailto:cbryan16@asu.edu">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
+    <header id="header">
+        <script>
+            $(function() {
+                $("#header").load("/assets/html/header.html");
+            });
+            </script>
     </header>
             
     <main class="flex-shrink-1">
@@ -98,7 +49,7 @@
             <ul>
                 <li><a href="/research/" class="link-danger">For researchers and businesses interested in collaborating, see the Research page.</a></li>
                 <li><a href="/policies/" class="link-danger">Are you a student interested in Vis research? Read the Lab Policies page first!</a></li>
-                <li><a href="/assets/cv/chris-bryan-june-2023.pdf" target="_blank" class="link-danger">CV</a> (last updated June 2023)</li>
+                <li><a href="/assets/cv/chris-bryan-july-2024.pdf" target="_blank" class="link-danger">CV</a> (last updated July 2024)</li>
             </ul>
 
             <h2>About</h2>
@@ -125,6 +76,19 @@
             <h2>Recent News</h2>
             <div class="mb-5">
 
+                <h5>August 2024</h5>
+                <p class="mx-2">Led by my SCAI colleague <a class="link-danger" href="https://persue-lab-asu.github.io/" target="_blank">Rakibul Hasan</a>, I'll be part of an NSF SaTC EDU project to study novel technology-enhanced pedagogies for privacy education:  <strong>NSF #2350036: Investigating the Role of Storytelling Visualization in Privacy Education</strong> (<a class="link-danger" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2350036&HistoricalAwards=false" target="_blank">link</a>).</p>
+
+                <h5>July 2024</h5>
+                <p class="mx-2">We will have two full papers at this year's <a href="https://ieeevis.org/year/2024/welcome" class="link-danger" target="_blank">IEEE VIS conference</a>: <b>Mind Drifts, Data Shifts: Utilizing Mind Wandering to Track the Evolution of User Experience with Data Visualizations</b>, led by recent SVL graduate Anjana Arunkumar, and <b>Defogger: A Visual Analysis Approach for Data Exploration of Sensitive Data Protected by Differential Privacy</b>, conducted in collaboration with Nankai University in Tianjin, China.</p>
+                <p class="mx-2">I have received a "2024 Top Five Percent Faculty at the Ira A. Fulton Schools of Engineering" award. 🏆</p>
+
+                <h5>June 2024</h5>
+                <p class="mx-2">Kannak has been awarded a Fulton Schools of Engineering MORE position for the Fall semester. Congrats Kannak! 🥳</p>
+
+                <h5>May 2024</h5>
+                <p class="mx-2">Anjana successfully defended her dissertation, 🦆 <b>The D.U.C.K. Bridge: Empowering Non-Experts in Data Visualization</b> 🦆. A huge congratulations to Dr. Arunkumar, who will begin a PostDoc at Northeastern University this summer! 🥳&nbsp;🥳&nbsp;🥳</p>
+
                 <h5>August 2023</h5>
                 <p class="mx-2">Michael's paper <b>Comparing Collaborative Visualization Behaviors in Desktop and Augmented Reality Environments</b> has been accepted to <a href="https://vrst.acm.org/vrst2023/" target="_blank" class="link-danger">ACM VRST 2023</a>. We explored how two-person teams (aka, dyads) communicate and interact when using Hololenses to analyze 3D visualizations in augmented reality.</p>
 
@@ -133,7 +97,7 @@
                 
                 <h5>June 2023</h5>
                 <p class="mx-2">Congrats to Anjana, Aditi, and Jinbin on passing their comprehensive exams and dissertation proposals this spring! 🎉 &nbsp;🎉 &nbsp;🎉 Lots of good work going on in the SVL right now!</p>
-                <p class="mx-2">I have been received a "2023 Top Five Percent Faculty at the Ira A. Fulton Schools of Engineering" award. </p>
+                <p class="mx-2">I have received a "2023 Top Five Percent Faculty at the Ira A. Fulton Schools of Engineering" award. 🏆</p>
 
                 <h5>April 2023</h5>
                 <p class="mx-2">Anjana and Shubham's paper <b>LINGO: Visually Debiasing Natural Language Instructions to Support Task Diversity</b> has been accepted to <a href="https://www.eurovis.org/" target="_blank" class="link-danger">EuroVis 2023</a>! LINGO is a novel visual analytics interface that supports an effective, task-driven workflow to help identify bias in natural language task instructions, alter (or create) task instructions to reduce bias, and evaluate pre-trained model performance on debiased task instructions.</p>
@@ -155,7 +119,7 @@
                 <p class="mx-2">We have two full papers accepted to this year's IEEE VIS conference. <strong>ConceptExplainer: Understanding the Mental Model of Deep Learning Algorithms via Interactive Concept-based Explanations</strong>, led by Jinbin Huang, is a visual analytics sytem for non-expert AI users to explore the behavior of image classification models using concept-based explanations. <strong>PMU Tracker: A Visualization Platform for Egocentric Event Propagation Analysis in the Power Grid</strong>, led by Anjana Arunkumar, develops a novel dendrogram-based visualization technique for analyzing topological network data.</p> 
 
                 <h5>July 2022</h5>
-                <p class="mx-2">Here is <a class="link-danger" href="https://news.asu.edu/20220627-interplanetary-initiative-announces-new-and-renewed-projects-academic-year" target="_blank">an article</a> about a pilot project (called <strong>Space Activity Heat Map</strong>) that we'll be workong on over the next year with ASU's Interplanetary Initiative. 🚀&nbsp;🪐&nbsp;🛰</p>
+                <p class="mx-2">Here is <a class="link-danger" href="https://news.asu.edu/20220627-interplanetary-initiative-announces-new-and-renewed-projects-academic-year" target="_blank">an article</a> about a pilot project (called <strong>Space Activity Heat Map</strong>) that we'll be working on over the next year with ASU's Interplanetary Initiative. 🚀&nbsp;🪐&nbsp;🛰</p>
 
                 <h5>June 2022</h5>
                 <p class="mx-2">We are very excited to be awarded an NSF IUSE grant to investigate ways to improve visualiation education: <strong>NSF #2216452: Developing and Evaluating a Classroom Orchestration Toolkit for Visualization Education</strong> (<a class="link-danger" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2216452" target="_blank">link</a>).</p>
