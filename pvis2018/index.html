@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>North Korea: Real or Paper Tiger?</title>
+
+  <link href="bootstrap.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="jquery-ui.css">
+
+  <script src="d3.v3.js"></script>
+  <script src="topojson.min.js"></script>
+  <script src="datamaps.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="jquery-ui.js"></script>
+
+  <script src="main.js"></script>
+  <script src="data.js"></script>
+</head>
+
+<body onload="main()">
+  <div class="container">
+    <!-- <h1 class="header">North Korea Missile Launches</h1> -->
+    <div class="steps_container neutral_start">
+      <button id="back" class="ui-button ui-widget ui-corner-all">Back</button>
+      <button id="0" class="ui-button ui-widget ui-corner-all step btn active"></button>
+      <button id="1" class="ui-button ui-widget ui-corner-all step btn disabled"></button>
+      <button id="2" class="ui-button ui-widget ui-corner-all step btn disabled"></button>
+      <button id="3" class="ui-button ui-widget ui-corner-all step btn disabled"></button>
+      <button id="4" class="ui-button ui-widget ui-corner-all step btn disabled"></button>
+      <button id="5" class="ui-button ui-widget ui-corner-all step btn disabled"></button>
+      <!-- <button id="forward" class="ui-button ui-widget ui-corner-all">Next</button> -->
+    </div>
+    <div class="steps_container real_tiger">
+      <button id="6_top" class="ui-button ui-widget ui-corner-all step btn disabled" style="background:#abdda4"></button>
+      <button id="7_top" class="ui-button ui-widget ui-corner-all step btn disabled" style="background:#abdda4"></button>
+      <button id="8_top" class="ui-button ui-widget ui-corner-all step btn disabled" style="background:#abdda4"></button>
+    </div>
+    <div class="steps_container paper_tiger">
+      <button id="6_bottom" class="ui-button ui-widget ui-corner-all step btn disabled" style="background:maroon"></button>
+      <button id="7_bottom" class="ui-button ui-widget ui-corner-all step btn disabled" style="background:maroon"></button>
+      <button id="8_bottom" class="ui-button ui-widget ui-corner-all step btn disabled" style="background:maroon"></button>
+    </div>
+    <div class="steps_container neutral_end">
+      <button id="9" class="ui-button ui-widget ui-corner-all step btn disabled"></button>
+      <button id="forward" class="ui-button ui-widget ui-corner-all">Next</button>
+    </div>
+    <!-- <p class="header">How dangerous is North Korea really?</p> -->
+
+      <div id="captions">
+        <h3></h3><span id="narration"></span><a href="" target="_blank"></a><span id="source"></span>
+      </div>
+
+      <div id="interactions_descriptions">
+        <span id="interactions_descriptions_text_1"></span>
+        <span id="interactions_descriptions_text_2"></span>
+      </div>
+
+
+      <div id="map"><svg id="background_to_map"></svg></div>
+      <div id="timeline2"></div>
+      <!-- <div id="missile_timeline_div"></div> -->
+      <div id="slider"></div>
+      <script>
+
+        function setSliderTicks(el) {
+          var $slider =  $(el);
+          var max =  $slider.slider("option", "max");
+          var min =  $slider.slider("option", "min");
+          var spacing =  100 / (max - min);
+          var leftX = 545;
+          var slider_width = 865;
+          $slider.find('.ui-slider-tick-mark').remove();
+
+          for (var i = 0; i < max-min ; i++) {
+              $('<span class="ui-slider-tick-mark"></span>').css('left', (spacing * i) +  '%').appendTo($slider);
+           }
+          for (var i = 0; i <= max-min ; i++) {
+            $('<span class="ui-slider-tick-mark_label">'+ "'" + String(1984 + i).slice(-2) +'</span>')
+              .css({'left': (spacing * i) - 0.85 + '%', 'top': '15px'}).appendTo($slider);
+          }
+        }
+        $( "#slider" ).slider({
+            min: 1984,
+            max: 2017,
+            step: 1,
+            create: function( event, ui ) {
+              setSliderTicks(event.target);
+            },
+            slide: function( event, ui ) {
+              $( "#slider_bar_val" ).val(ui.value);
+              slider_bar_val_did_change(String(ui.value - 1),ui.value - 1);
+
+              // var body = document.querySelector('body');
+              // var scale = (parseFloat(body.clientWidth)/1440)*100;
+              var left_val = (parseFloat(d3.select(".ui-slider-handle").style("left"))/(parseFloat(d3.select("#slider").style("width"))*contentScale))*100;
+
+              console.log(left_val);
+              // d3.select(".ui-slider-handle").style("left", left_val+"%");
+
+              $('.ui-slider-handle').css({
+                // '-webkit-transform' : 'translateX(' + (left) + '%'+')',
+                // '-moz-transform'    : 'translateX(' + (left) + '%'+')',
+                // '-ms-transform'     : 'translateX(' + (left) + '%'+')',
+                // '-o-transform'      : 'translateX(' + (left) + '%'+')',
+                // 'transform'         : 'translateX(' + (left) + '%'+')'
+                left : left_val + "%"
+              });
+            }
+        });
+        $( "#slider_bar_val" ).val( $( "#slider" ).slider( "value" ) );
+        $("#slider").hide();
+      </script>
+    <p class="credits">
+      <!-- By HIDE SHIDARA, CHRIS BRYAN, KWAN-LIU MA -->
+    </p>
+    <!-- <img class="logo" src="img/vidi-logo.png" alt="logo"> -->
+  </div>
+</body>
+
+<script>
+  var user_chose_real_tiger_route = false;
+  $( "#back" ).click(function() {
+    if(step > 0){
+      if(step==7 || step==8 || step==9){
+        if(step_is_visited[5]["user_chose_real_tiger_path"] == false && step_is_visited[5]["user_chose_paper_tiger_path"] == false){
+          return;
+        }
+      }
+      step -= 1
+      // if(step == 6) remove_arcs();
+      go_to_step(step,false);
+    }
+  });
+  $( "#forward" ).click(function() {
+    d3.select("#forward").attr("class","ui-button ui-widget ui-corner-all");
+    if(step < 9){
+      if(step==5 || step==6 || step==7){
+        if(step_is_visited[5]["user_chose_real_tiger_path"] == false && step_is_visited[5]["user_chose_paper_tiger_path"] == false){
+          d3.select("#forward").attr("class","ui-button ui-widget ui-corner-all btn disabled");
+          return;
+        }
+      }
+      step += 1
+      console.log(step);
+      go_to_step(step,false);
+    }
+  });
+  $(".step").click(function(){
+    if($( "#"+this.id ).hasClass( "disabled" ) == true){
+      console.log("disabled button");
+      return;
+    }
+    if(String(this.id) == "6_top" || String(this.id) == "7_top" || String(this.id) == "8_top"){
+      step_is_visited[5]["user_chose_real_tiger_path"] = false;
+      step_is_visited[5]["user_chose_paper_tiger_path"] = false;
+      step_is_visited[5]["user_chose_real_tiger_path"] = true;
+    }
+    else if(String(this.id) == "6_bottom" || String(this.id) == "7_bottom" || String(this.id) == "8_bottom"){
+      step_is_visited[5]["user_chose_real_tiger_path"] = false;
+      step_is_visited[5]["user_chose_paper_tiger_path"] = false;
+      step_is_visited[5]["user_chose_paper_tiger_path"] = true;
+    }
+    go_to_step(parseFloat(this.id.charAt(0)),true);
+  })
+
+  // var step_is_visited = [true,false,false,false,false,false,false,false,false,false];
+
+  var step_is_visited = [
+    {"step": 0, "is_split_step": false, "did_visit": true},
+    {"step": 1, "is_split_step": false, "did_visit": false},
+    {"step": 2, "is_split_step": false, "did_visit": false},
+    {"step": 3, "is_split_step": false, "did_visit": false},
+    {"step": 4, "is_split_step": false, "did_visit": false},
+    {"step": 5, "is_split_step": false, "did_visit": false, "user_chose_real_tiger_path": false, "user_chose_paper_tiger_path": false},
+    {"step": 6, "is_split_step": true, "did_visit_real_tiger_step": false, "did_visit_paper_tiger_step": false},
+    {"step": 7, "is_split_step": true, "did_visit_real_tiger_step": false, "did_visit_paper_tiger_step": false},
+    {"step": 8, "is_split_step": true, "did_visit_real_tiger_step": false, "did_visit_paper_tiger_step": false},
+    {"step": 9, "is_split_step": false, "did_visit": false}
+  ];
+
+  function go_to_step(n,step_is_selected){
+    // console.log(n,step_is_visited[5]["user_chose_real_tiger_path"],step_is_visited[5]["user_chose_paper_tiger_path"]);
+    if(n==6 || n==7 || n==8){
+      if(step_is_visited[5]["user_chose_real_tiger_path"] == false && step_is_visited[5]["user_chose_paper_tiger_path"] == false){
+        return;
+      }
+
+      if(step_is_visited[5]["user_chose_real_tiger_path"] == true){
+        $(".step.active").removeClass("active");
+        $(".step#"+(n)+"_top").addClass("active");
+        $(".step#"+(n)+"_top").removeClass("disabled");
+      }
+      else if(step_is_visited[5]["user_chose_paper_tiger_path"] == true){
+        $(".step.active").removeClass("active");
+        $(".step#"+(n)+"_bottom").addClass("active");
+        $(".step#"+(n)+"_bottom").removeClass("disabled");
+      }
+
+    }
+    else{
+      $(".step.active").removeClass("active");
+      $(".step#"+(n)).addClass("active");
+      $(".step#"+(n)).removeClass("disabled");
+    }
+    if(step_is_visited[n]["did_visit"] == false && step_is_selected == true) return;
+
+    step_is_visited[n]["did_visit"] = true;
+    step = n;
+
+    switch(n) {
+      case 0:
+        step_0();
+        break;
+      case 1:
+        step_1();
+        break;
+      case 2:
+        step_2();
+        break;
+      case 3:
+        step_3();
+        break;
+      case 4:
+        step_4();
+        break;
+      case 5:
+        step_5();
+        break;
+      case 6:
+        if(step_is_visited[5]["user_chose_real_tiger_path"] == true){
+          step_6_top();
+          break;
+        }
+        else if(step_is_visited[5]["user_chose_paper_tiger_path"] == true){
+          step_6_bottom();
+          break;
+        }
+        break;
+      case 7:
+        if(step_is_visited[5]["user_chose_real_tiger_path"] == true){
+          step_7_top();
+          break;
+        }
+        else if(step_is_visited[5]["user_chose_paper_tiger_path"] == true){
+          step_7_bottom();
+          break;
+        }
+        break;
+      case 8:
+        if(step_is_visited[5]["user_chose_real_tiger_path"] == true){
+          step_8_top();
+          break;
+        }
+        else if(step_is_visited[5]["user_chose_paper_tiger_path"] == true){
+          step_8_bottom();
+          break;
+        }
+        break;
+      case 9:
+        step_9();
+        break;
+      default:
+          return;
+    }
+  };
+  var contentScale = 1.0;
+  // var curr_window_width = 1440;
+  function on_resize(){
+    var body = document.querySelector('body');
+    var width = parseFloat(body.clientWidth);
+    var height = parseFloat(body.clientHeight);
+     // var container = this.canvasContainer;
+     var container = d3.select(".container");
+
+     contentScale = 1.0;
+     if (width < 1440 || height < 900) {
+         if ((width / height) < (1440.0 / 900)) {
+             contentScale = width / 1440.0;
+         }
+         else {
+             contentScale = height / 900.0;
+         }
+
+         if(width <= 480){
+           container.style("transform",'scale(' + contentScale.toString() + ')');
+           container.style('transform-origin','0 0');
+         }
+         else{
+
+           container.style("transform",'scale(' + contentScale.toString() + ')');
+           container.style('transform-origin','0 0');
+         }
+     }
+     else {
+       container.style('transform','scale(1)');
+     }
+  };
+  // on_resize();
+  $( window ).resize(function() {
+    // on_resize();
+  });
+
+</script>
+
+</html>
