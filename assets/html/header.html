@@ -77,4 +77,16 @@
         $("#home-link").addClass('active');
         $("#name-link").addClass('d-none');
     }
+
+    var theme = sessionStorage.getItem("theme");
+    if (theme == null) {
+      theme = "default"
+      sessionStorage.setItem("theme", theme);
+      console.log(`Setting theme to ${theme}`);
+    }
+
+    function changeTheme(newTheme) {
+      sessionStorage.setItem("theme", newTheme);
+      console.log(`Updating theme to ${newTheme}`);
+    }
 </script>
